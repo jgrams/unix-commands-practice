@@ -5,8 +5,6 @@
  touch commands.txt
  whoami
  who
- finger
- Fucking gross, what the fuck Unix
  top
  uptime
  tr
