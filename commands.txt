@@ -14,37 +14,20 @@
  tr 'a-z' 'a-y'
  echo tr 'a-z' 'a-y'
  tr 'a' 'b'
- Add some additional affinity.
- Add some bdditionbl bffinity.
  echo "Additional affinity for all people." > replace.txt
  tr a b < replace.txt > replaced.txt
  cat replaced.txt
  cat replaced.txt | tr b a > restored.txt
- cat restored.txt | sed 's/all/every/:g' > replaced.txt
- cat restored.txt | sed s/all/every/:g > replaced.txt
- cat restored.txt
  cat restored.txt | sed s/all/every/g > replaced.txt
- cat restored.txt | sed -e 's/all/every' -e 's/Additional/More than enough' >> replaced.txt
- cat restored.txt | sed -e 's/all/every' -e 's/Additional/More than enough/' >> replaced.txt
  cat restored.txt | sed -e 's/all/every/' -e 's/Additional/More than enough/' >> replaced.txt
  sed -e 's/every/total percentages/' -i restored.txt
- cat restored.txt | awk print
- cat restored.txt | awk (print)
- cat restored.txt | awk '(print)'
- cat restored.txt | awk `(print)`
  cat restored.txt | gawk {print}
  gawk {print} replace.txt
  ls
- hsitory 40
- history 40
- history 60
  history 53 > commands.txt
  vim commands.txt
  cat commands.txt
  pwd
  cd unix-commands/
- history 47 | awk '{$1='';print;}
-
- history 47 | awk '{$1="";print;}'
- '
+ history 47 | awk '{$1='';print;}'
  history 49 | awk '{$1="";print;}' > commands.txt
