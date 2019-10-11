@@ -29,3 +29,10 @@
  cd unix-commands/
  history 47 | awk '{$1='';print;}'
  history 49 | awk '{$1="";print;}' > commands.txt
+ lsof -p 1808
+ lsof -p 3604
+ mkfifo my-pipette
+ ping google.com
+ curl google.com
+ fd = socket(AF_INET, SOCK_STREAM)
+ ldd /user/bin/chown
