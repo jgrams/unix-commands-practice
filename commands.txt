@@ -36,3 +36,65 @@
  curl google.com
  fd = socket(AF_INET, SOCK_STREAM)
  ldd /user/bin/chown
+ chmod 644 replaced.txt
+ sudo cat /proc/3/environ
+ sudo cat /proc/3/stack
+ sudo cat /proc/3/status
+ sudo cat /proc/3/cmdline
+ ls /proc/3/exe
+ ls /proc/3/pd
+ top
+ strace ls /tmp
+ lsof
+ lsof -p 3603
+ mkfifo my-pipette
+ ping google.com
+ curl google.com
+ fd = socket(AF_INET, SOCK_STREAM)
+ fd = socket(AF_INET, SOCK_STREAM);
+ ldd /bin/chown
+
+ #dig does a dns query
+ #five parts, query, ttl, class, record type, record value
+ dig netflix.com
+
+ dig +short netflix.com | wc -l
+ dig +trace netflix.com
+ dig TXT netflix.com
+ dig MX netflix.com
+ dig NS netflix.com
+ dig mongoose.com
+ dig CNAME mongoose.com
+ dig -x 23.227.38.32
+ # set the dns server
+ dig @ 1.1.1.1 netflix.com
+ dig @1.1.1.1 netflix.com
+ # ping checks if you can reach a host and its latency
+ ping health.gov.au | grep time
+ ping health.gov.au
+ # ping sends an ICMP packet and waits for a reply
+ # servers can choose to ignore these packets
+ ping facebook.au
+ traceroute health.gov.au
+ sudo apt install traceroute
+ traceroute health.gov.au
+ dig -x 108.232.84.1
+ dig -x 71.151.17.114
+ dig -x 12.240.210.34
+ # mtr has a nicer output
+ mtr gov.au
+ curl wizardzines.com
+
+ # curl makes Http Requests
+ # specify headers with -H
+ # follow 3xx redirects
+ # --data @filename.json to POST
+ # in the network tab of dev tools you can copy as curl
+ # this can expose your cookies, be careful
+ # Use -X for POST or other HTTP verbs
+ curl 'http://localhost:3000/' -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:69.0) Gecko/20100101 Firefox/69.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Connection: keep-alive' -H 'Upgrade-Insecure-Requests: 1' -H 'If-None-Match: W/"74e-UWrhmlBVCU3a0wptKBxKS0WoOMY"'
+ # nmap is for scanning networks
+ # useful for security
+ nmap scanme.nmap.org
+ nmap -v -A scanme.nmap.org
+ history 140 | awk '{$1="";print;}' >> commands.txt
